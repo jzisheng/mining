@@ -1,0 +1,11 @@
+import pprint as pp
+import requests
+
+data = None
+
+if data == None:
+    url = "https://api.f2pool.com/ethereum/zisheng"
+    x = requests.get(url)
+    data = x.json()
+
+pp.pprint(data)
